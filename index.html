@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bubbler.css">
+    <link rel="stylesheet" href="css/font-awesome-6.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select-wrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.mobile.css">
+    <link rel="stylesheet" href="css/style.tablet.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white fixed-top shadow border-bottom-white p-1">
+            <div class="container">
+                <div class="d-xl-none"></div>
+                <a href="#">
+                    <img class="logo" src="assets/logowisatatimor.png " alt="..." style="width: 100px; height: 100px;">
+                </a>
+                <div class="d-xl-none"></div>
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="infoTicket" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Informasi Tiket
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="infoTicket">
+                                <a class="nav-link " href="#">
+                                    Harga Tiket
+                                </a>
+                                <a class="nav-link " href="#">
+                                    Cara Memesan Tiket
+                                </a>
+                                <a class="nav-link " href="#">
+                                    FAQ
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                Kontak Kami
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-cancel" href="#">
+                                Pembatalan Tiket
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-hero">
+    <div class="hero">
+        <div class="col-md-12">
+            <div class="row py-5">
+                <div class="col-md-7">
+                    <div class="hero-text-title">
+                        <h1 class="text-white">
+                            Budaya Baru Berwisata <br> Menggunakan Wisata Timor
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div class="card shadow div-rounded">
+                        <div class="card-body">
+                            <h3 class="font-weight-bold text-center mb-4">
+                                Rencanakan Harimu!
+                            </h3>
+                            <form action="#" method="post">
+                                <input type="hidden" name="_token" value="0HKN7YsWbzjRmJkzqh25yiI44om4e5ohLEFj4zzO">                                    <input type="hidden" name="select_date" id="select_date">
+                                <div class="form-group mb-4">
+                                    <label class="font-weight-bold" for="select_tour">
+                                        Destinasi Wisata
+                                    </label>
+                                    <select name="select_tour" id="select_tour" class="select" style="display: none;">
+                                        <option disabled="" selected="">Pilih salah satu</option>
+                                                                                        <option value="23">
+                                                Pantai Batu tujuh 
+                                            </option>
+                                                                                        <option value="169">
+                                                Taman Wisata Alam Pulau Menipo
+                                            </option>
+                                                                                        <option value="170">
+                                                Danau Nausus
+                                            </option>
+                                                                                        <option value="171">
+                                                Air Tagepe Noinbila
+                                            </option>
+                                                                                        <option value="174">
+                                                Hutan Bonsai Fatumnasi 
+                                            </option>
+                                                                                        <option value="201">
+                                                Pantai Kolbano
+                                            </option>
+                                                                                        <option value="206">
+                                                Gunung Fatuleu
+                                            </option>
+                                                                                        <option value="207">
+                                                Air Terjun Oenesu
+                                            </option>
+                                                                                        <option value="207">
+                                                Pantai Tablolong
+                                            </option>   
+                                                                                        <option value="207">
+                                                Gua Kristal
+                                            </option>
+                                                                                </select>
+                                                                                
+                                                                              
+                                            
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="font-weight-bold" for="select_shiftgroup">
+                                        Hari Kunjungan
+                                    </label>
+                                    <select name="select_shiftgroup" id="select_shiftgroup" class="select" style="display: none;">
+                                        <option disabled="" selected="">Pilih wisata terlebih dahulu</option>
+                                    </select><ul class="selectCF"></ul>
+                                </div>
+                                <div class="mt-3 py-2 text-center">
+                                    <button type="submit" class="btn btn-main rounded-full px-4">
+                                        <i class="fa fa-fw fa-clipboard-list"></i>
+                                        Pesan Tiket
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="px-4" style="padding-top: 50px;">
+            <section class="front-container">
+    <div class="row">
+        <div class="col-md-4 my-2">
+            <div class="flash-info position-relative">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="navbar-brand">
+                                <div class="img-container">
+                                    <img src="assets/logowisatatimor2.png"  style="width: 120px; height: 120px;">
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="row">
+                                    <div class="hover-name col-auto pr-0">
+                                        <div class="text-dark position-relative">
+                                            <h5>Info</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto pr-0">
+                                        <span class="text-muted">@JOKOWI</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    Website ini belum selesai dibuat. <br>Tunggu uopdate berikutnya dari website WISATA TIMOR
+                                </div>
+                                                                                
+                            </div>
+                        </div>
+                        <hr>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 my-2">
+            <div class="info-box info-box-primary mb-5">
+                <div class="helper">
+                    <div class="helper-content">
+                        <h3>Akses Informasi</h3>
+                        <div>
+                            <p class="mb-1">
+                                Informasi terkait WISATA TIMOR  dapat dilihat pada laman instagram berikut.
+                            </p>
+                            <a href="#" class="btn btn-light my-1" target="_blank">
+                                <i class="fab fa-fw fa-instagram"></i>
+                                @JOKOWI
+                            </a>
+                            <a href="#" class="btn btn-light my-1" target="_blank">
+                                <i class="fab fa-fw fa-instagram"></i>
+                                @grrbnyy_
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <h6 class="font-weight-bold">
+                                Tourism Information Center
+                            </h6>
+                            <p class="mb-1">
+                                <i class="fa fa-fw fa-map-marker-alt"></i>
+                                Jl. Kamu Nanyhak??,enggak
+                            </p>
+                        </div>
+                    </div>
+                    <div class="helper-img">
+                        <img src="#" alt="..">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-4 front-container">
+    <h1 class="text-center font-weight-bold mb-3 explore-title">
+        Jelajahi Wisata Timor
+    </h1>
+    <div class="row justify-content-center">
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/pantaibatutujuh.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Pantai Batu tujuh  
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Rp 10.000
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/pulaumenipo.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Taman Wisata Alam Pulau Menipo
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Rp 5.000
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/danaunausus.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Danau Nausus
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/airtagepenoninbila.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Air Tagepe Noinbila 
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/hutanbonsai.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                        <span class="badge badge-danger px-3 py-2">
+                                        Tutup
+                                    </span>
+                                                                    <h3 class="mb-1">
+                                    Hutan Bonsai Fatumnasi
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/pantaikolbano.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Pantai Kolbano
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/gunungfatuleu.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Gunung Fatuleu 
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/airterjunoneseu.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                        <span class="badge badge-danger px-3 py-2">
+                                        Tutup
+                                    </span>
+                                                                    <h3 class="mb-1">
+                                    Air Terjun Oenesu
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Gratis                                    
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/pantaitablolong.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Pantai Tablolong
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Rp 10.000
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col-md-3 my-2">
+                <a href="#">
+                    <div class="destination-list">
+                        <div class="img d-flex align-items-end justify-content-center" style="background-image:url(assets/guakristal.jfif); background-size: cover;">
+                            <div class="text w-100">
+                                                                                                                    <span class="badge badge-success px-3 py-2">
+                                            Buka
+                                        </span>
+                                                                                                            <h3 class="mb-1">
+                                    Gua Kristal
+                                </h3>
+                                <h5 class="text-white font-weight-bold">
+                                                                                Rp 4.000
+                                                                        </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        
+                        
+                </div>
+</section>
+    </div>
+</main>
+
+
+
+<footer class="bg-primary pb-0">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-7">
+                <h3>Tentang Kami</h3>
+                <p class="mb-4">
+                    Aplikasi  Wisata Timor hadir sebagai solusi bagi masyarakat untuk menikmati obyek wisata di Daerah Timor Indonesia dengan kemudahan informasi pemesanan tiket berbasis online.
+                </p>
+                <ul class="list-unstyled quick-info mb-4">
+                    <li>
+                        <a class="d-flex align-items-center">
+                            <span class="fa fa-fw fa-map-marker-alt mr-2"></span>
+                            Jl. Kamu Nanyhak??, kec.iyak, kab.enggak, jawautara 66183
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="fa fa-fw fa-phone mr-2"></span>
+                            081515389842 (Tegar Benaya Chrismanuel S.)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="fa fa-fw fa-phone mr-2"></span>
+                            08.. (Dimas Auliya'Surya N.)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="fa fa-fw fa-phone mr-2"></span>
+                            08... (Bryan Isa A.)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="fa fa-fw fa-envelope mr-2"></span>
+                            gaktaulah@timor.go.igd
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 pb-4" id="socialmedia">
+                <h3>Sosial Media</h3>
+                <ul class="list-unstyled nav-links social nav-right text-lg-right mt-4">
+                    <li>
+                        <a href="#">
+                            <span class="fab fa-fw fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fab fa-fw fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fab fa-fw fa-facebook"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="my-5">
+                    <div id="histats_counter">
+                        <script type="text/javascript">
+                            var _Hasync= _Hasync|| [];
+                            _Hasync.push(['Histats.start', '1,4632896,4,408,270,55,00011110']);
+                            _Hasync.push(['Histats.fasi', '1']);
+                            _Hasync.push(['Histats.track_hits', '']);
+                            (function() {
+                            var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                            hs.src = ('https://s10.histats.com/js15_as.js');
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                            })();
+                        </script>
+                        <noscript>
+                            <a href="/" target="_blank">
+                                <img src="https://sstatic1.histats.com/0.gif?4632896&101" class="img-fluid" alt="" border="0">
+                            </a>
+                        </noscript>
+                    <div id="histats_counter_2142"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/alerthelper.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/formathelper.js"></script>
+ <script src="js/owl.carousel.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/sweetalert2.all.js"></script>   
+ <script>
+    $(function () {
+        $("#select_tour").selectCF({
+            change: function () {
+                var value = $(this).val();
+                findshiftgroup(value);
+            }
+        });
+
+        $("#select_shiftgroup").selectCF({
+            change: function () {
+                var value = $(this).val();
+                findshift(value);
+            }
+        });
+
+        $("#select_shift").selectCF();
+    });
+
+    function findshiftgroup(id) {
+        var url = "https://tiketwisata.surabaya.go.id/api/findshiftgroup/:param";
+        url = url.replace(':param', id);            
+        $.ajax({
+            url: url,
+            method: "GET",
+            success: function(result) {
+                var html = "<option disabled selected>Pilihan tidak tersedia</option>";
+                if (result && result.status == true) {
+                    html = "<option disabled selected>Pilih salah satu</option>";
+                    result.data.forEach(element => {
+                        if (element.shiftgroup) {
+                            html += "<option value='" + element.shiftgroup.id + "|" + element.date + "'>" + getDayName(element.shiftgroup.day) + ", " + element.datetranslated + "</option>";
+                        }
+                    });
+                }
+                $('#select_shiftgroup').html(html);
+                $('#select_shiftgroup').next().remove();
+                $("#select_shiftgroup").selectCF({
+                    change: function () {
+                        var value = $(this).val();
+                        findshift(value);
+                    }
+                });
+                $('#select_shift').next().remove();
+                $('#select_shift').html("<option disabled selected>Pilih hari dulu</option>");
+                $('#select_shift').selectCF();
+            },
+            error: function(result) {
+                alert('Terjadi kesalahan dalam pengambilan data!');
+                window.location.reload();
+                console.log(result);
+            }
+        });
+    }
+
+    function findshift(id) {
+        var params = id.split('|');
+        var shiftgroup_id = params[0];
+        var date = params[1];
+    
+        $('#select_date').val(date);
+    
+        var url = "https://tiketwisata.surabaya.go.id/api/findshift/:shiftgroup_id/:date";
+        url = url.replace(':shiftgroup_id', shiftgroup_id);
+        url = url.replace(':date', date);
+        $.ajax({
+            url: url,
+            method: "GET",
+            success: function(result) {
+                var html = "<option disabled selected>Pilihan tidak tersedia</option>";
+                if (result && result.status == true) {
+                    html = "<option disabled selected>Pilih salah satu</option>";
+                    result.shift.forEach(element => {
+                        html += "<option value=" + element.id + " data-display=" + element.starthour + "-" + element.endhour + ">" + element.starthour + "-" + element.endhour + " (Sisa kuota: " + element.quotaremain + ")</option>";
+                    });
+                }
+                $('#select_shift').html(html);
+                $('#select_shift').next().remove();
+                $('#select_shift').selectCF();
+            },
+            error: function(result) {
+                alert('Terjadi kesalahan dalam pengambilan data!');
+                window.location.reload();
+                console.log(result);
+            }
+        });
+    }
+
+    $('.slider-info').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        touchDrag: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+        }
+    });
+</script>
+
+<script src="js/select-wrap.js"></script>
+</body>
+</html>
